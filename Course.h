@@ -1,19 +1,19 @@
 #ifndef COURSE_H
 #define COURSE_H
 
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 #include <unordered_map>
-#include <student.h>
+#include "Student.h"
 #include <vector>
-#include "subject.h"
+#include "Subject.h"
 #include <unordered_map>
 
 class Course
 {
     private:
-        unordered_map<int , Student> studentMap;
-        unordered_map<int, Subject> Subjects;
+        std::unordered_map<int , Student> studentMap;
+        std::unordered_map<int, Subject> Subjects;
 
     public:
         Course();

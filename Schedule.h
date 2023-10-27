@@ -1,15 +1,15 @@
 #ifndef SCHEDULE_H
 #define SCHEDULE_H
 
-#include "subject.h"
-#include "class.h"
+#include "Subject.h"
+#include "Class.h"
 #include <iostream>
 #include <vector>
 
 class Schedule
 {
     private:
-        vector<Subject> schedule_;
+        std::vector<Subject> schedule_;
 
     public:
         Schedule();

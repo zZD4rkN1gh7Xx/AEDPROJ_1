@@ -1,0 +1,4 @@
+# ninja log v5
+0	14	1698432880412666784	build.ninja	33970b892921ed86
+0	16	1698430914390690697	CMakeFiles/AEDPROJ_1.dir/main.cpp.o	976a1a0d21a0fc6b
+0	287	1698432118675489432	CMakeFiles/AEDPROJ_1.dir/reader.cpp.o	8fa52ac31c0aabe0

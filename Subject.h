@@ -4,20 +4,22 @@
 #include<iostream>
 #include<string>
 #include <vector>
-#include "class.h"
+#include "Course.h"
+
+#include "Class.h"
 #include <unordered_map>
 
-using namespace std;
 
 class Subject
 {
     private:
 
         int Code_;
-        unordered_map<int, Class> subjectClasses;
+        std::unordered_map<int, Class()> subjectClasses;
 
     
     public:
+        Subject();
         Subject(int code);
         int getCode();
         void addClass(int classCode, Class class_);

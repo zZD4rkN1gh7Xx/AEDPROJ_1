@@ -1,9 +1,9 @@
-#include "schedule.h"
+#include "Schedule.h"
 #include <iostream>
 #include <vector>
-#include "subject.h"
+#include "Subject.h"
 
-using namespace std;
+
 
 Schedule::Schedule()
 {

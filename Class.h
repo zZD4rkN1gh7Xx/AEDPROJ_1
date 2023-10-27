@@ -1,29 +1,30 @@
 #ifndef CLASS_H
 #define CLASS_H
 
-#include "subject.h"
+#include "Subject.h"
 #include <string>
 
 class Class
 {
     private:
         int classCode_;
-        string day_;
+        std::string day_;
         int time_;
         int duration_;
-        string type_;
+        std::string type_;
 
     public:
         Class(int code);
-        void setDay(string day);
+        Class();
+        void setDay(std::string day);
         void setTime(int time);
         void setDuration(int duration);
-        void setType(string type);
+        void setType(std::string type);
         int getClassCode(void);
-        string getDay(void);
+        std::string getDay(void);
         int getTime(void);
         int getDuration(void);
-        string getType(void);
+        std::string getType(void);
 
 };
 

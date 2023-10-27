@@ -1,0 +1,3 @@
+/home/joao/AED23/AEDPROJ_1/cmake-build-debug/CMakeFiles/AEDPROJ_1.dir
+/home/joao/AED23/AEDPROJ_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/joao/AED23/AEDPROJ_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

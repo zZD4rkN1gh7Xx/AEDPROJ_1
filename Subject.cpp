@@ -1,9 +1,9 @@
-#include "subject.h"
+#include "Subject.h"
 #include <iostream>
 #include <string>
 
-using namespace std;
 
+Subject::Subject(){};
 Subject::Subject(int code)
 {
     this->Code_ = code;

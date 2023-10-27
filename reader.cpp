@@ -3,23 +3,28 @@
 #include <fstream>
 #include <sstream>
 
-using namespace std;
+#include "Class.h"
+#include "Course.h"
+#include "Schedule.h"
+#include "Student.h"
+#include "Subject.h"
 
-void read(const string fileName)
+
+void read(const std::string fileName)
 {
-    ifstream inputFile(fileName);
+    std::ifstream inputFile(fileName);
 
     if(inputFile.is_open())
     {
-        string line;
+        std::string line;
         while(getline(inputFile,line))
         {
-            string UcCode, ClassCode;
-            istringstream ss(line);
+            std::string UcCode, ClassCode;
+            std::istringstream ss(line);
 
             if(getline(ss,UcCode,',') && getline(ss, ClassCode))
             {
-                cout << UcCode << "! " << ClassCode << endl;
+                std::cout << UcCode << "! " << ClassCode << std::endl;
             }
 
         }
@@ -29,19 +34,7 @@ void read(const string fileName)
 
     else
     {
-        cerr << "Error to open :" << fileName << endl;
+        std::cerr << "Error to open :" << fileName << std::endl;
     }
 }
 
-int main(int argc, char* argv[])
-{
-    if(argc >= 2)
-    {
-        const string inputFileName = argv[1];
-        read(inputFileName);
-        return 0;
-    }
-
-    return 1;
-
-}

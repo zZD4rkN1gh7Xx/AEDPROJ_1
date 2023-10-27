@@ -1,15 +1,14 @@
-#include "class.h"
+#include "Class.h"
 #include <iostream>
 #include <string>
 
-using namespace std;
-
+Class::Class(){};
 Class::Class(int code)
 {
     this->classCode_ = code;
 }
 
-void Class::setDay(string day)
+void Class::setDay(std::string day)
 {
     this->day_ = day;
 }
@@ -21,7 +20,7 @@ void Class::setDuration(int duration)
 {
     this->duration_ = duration;
 }
-void Class::setType(string type)
+void Class::setType(std::string type)
 {
     this->type_ = type;
 }
@@ -31,7 +30,7 @@ int Class::getClassCode(void)
     return classCode_;
 }
 
-string Class::getDay(void)
+std::string Class::getDay(void)
 {
     return day_;
 }
@@ -46,7 +45,7 @@ int Class::getDuration(void)
     return duration_;
 }
 
-string Class::getType(void)
+std::string Class::getType(void)
 {
     return type_;
 }
