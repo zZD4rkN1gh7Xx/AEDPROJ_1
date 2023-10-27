@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void read(const string fileName)
+void read1(const string fileName) // funçao que trabalha com o ficheiro das Uc e class code
 {
     ifstream inputFile(fileName);
 
@@ -20,6 +20,9 @@ void read(const string fileName)
             if(getline(ss,UcCode,',') && getline(ss, ClassCode))
             {
                 cout << UcCode << "! " << ClassCode << endl;
+                // aqui envex de ser para dar cout e suposto criar novos subjects se nao existirem e as turmas de cada subject
+                // ou seja
+                // 
             }
 
         }
@@ -38,7 +41,7 @@ int main(int argc, char* argv[])
     if(argc >= 2)
     {
         const string inputFileName = argv[1];
-        read(inputFileName);
+        read1(inputFileName);
         return 0;
     }
 

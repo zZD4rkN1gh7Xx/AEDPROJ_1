@@ -24,3 +24,8 @@ void Course::addSubject(Subject subject)
 {
     Subjects[subject.getCode()] = subject;
 }
+
+bool Course::SubjectExists(Subject subject)
+{
+    
+}

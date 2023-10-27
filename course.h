@@ -21,6 +21,7 @@ class Course
         void getAllStudents();
         void addStudent(Student student);
         void addSubject(Subject subject);
+        bool SubjectExists(Subject subject);
         
 
 };
